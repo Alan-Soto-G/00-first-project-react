@@ -8,7 +8,7 @@ h1{
     text-align: left;
 }
 
-#tw-card {
+.tw-card {
     max-width: 400px; /* Limita el ancho */
     padding: 1rem;
     border-radius: 12px;
@@ -17,7 +17,12 @@ h1{
     box-sizing: border-box;
 }
 
-#tw-cards{
+.tw-card:hover{
+    background-color: #333; /* Cambia el color de fondo al pasar el ratón */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.tw-cards{
     position: relative;
     right: -20rem;
     top: 15rem;
@@ -38,7 +43,7 @@ h1{
     justify-content: space-between;
 }
 
-#tw-card-img {
+.tw-card-img {
     width: 48px;
     height: 48px;
     border-radius: 50%;
@@ -46,7 +51,7 @@ h1{
     color: white;
 }
 
-#tw-card-user {
+.tw-card-user {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,7 +59,7 @@ h1{
     color: white;
 }
 
-#tw-card-button-follow {
+.tw-card-button-follow {
     margin-left: 1rem;
     padding: 0.4rem 1rem;
     background-color: #ffffff;
@@ -65,7 +70,35 @@ h1{
     font-size: 0.9rem;
 }
 
+.tw-followCard-stopFollow{
+    display: none;
+}
+
+.tw-card-button-follow.is-following:hover .tw-followCard-stopFollow {
+    display: block;
+}
+
+.tw-card-button-follow.is-following:hover{
+    background-color: #ff4c4c43;
+    border: 1px solid red;
+    color: red;
+}
+
+.tw-card-button-follow.is-following:hover .tw-cardFollow-text {
+    display: none;
+}
+
+.tw-card-button-follow.is-following{
+    width: 140px;
+}
+
 /* Efecto al hacer clic */
-#tw-card-button-follow:active {
+.tw-card-button-follow:active {
     transform: scale(0.95); /* Pequeño "hundimiento" */
+}
+
+.tw-card-button-follow:hover {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 1px solid #767272;
 }
