@@ -1,0 +1,71 @@
+body{
+    background-color: #222;
+    ;
+}
+
+h1{
+    color: white;
+    text-align: left;
+}
+
+#tw-card {
+    max-width: 400px; /* Limita el ancho */
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: #222;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+#tw-cards{
+    position: relative;
+    right: -20rem;
+    top: 15rem;
+    max-width: 25rem; /* Limita el ancho */
+    background-color: #222;
+    border-radius: 3%;
+    border: 1px solid #767272;
+    padding: 1rem;
+    overflow: auto;
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    
+}
+
+.tw-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#tw-card-img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    color: white;
+}
+
+#tw-card-user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: auto;
+    color: white;
+}
+
+#tw-card-button-follow {
+    margin-left: 1rem;
+    padding: 0.4rem 1rem;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+/* Efecto al hacer clic */
+#tw-card-button-follow:active {
+    transform: scale(0.95); /* Pequeño "hundimiento" */
+}
